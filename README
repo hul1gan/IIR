@@ -1,0 +1,13 @@
+Сборка проекта:
+
+1. cmake  -DCMAKE_TOOLCHAIN_FILE=../../toolchains/gcc-jetson-tx2-aarch64.cmake -DCMAKE_INSTALL_PREFIX=/home/..path here../build ..
+2. make install
+
+ Упаковка исходного файла и файлов для теста в архив:
+1. cpack 
+
+Для octave необходимо уставновить дополительный пакет forge-signal https://octave.sourceforge.io/packages.php. 
+Команды для установки пакета (производить в консольной строке octave):
+
+1. pkg install signal-1.4.1.tar.gz
+2. pkg load signal
